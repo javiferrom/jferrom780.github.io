@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+	<link rel="shortcut icon" href="./logo.ico" type="image/x-icon">
+    <title>Práctica JavaScript</title>
+</head>
+<body>
+	<main>
+		<h1>Formulario validado con <span>JavaScript</span></h1>
+		<form action="https://formsubmit.co/93d11c15dfabb303213c736d9d3d6c8b" method="POST" class="formulario" id="formulario">
+			<div class="grupo" id="grupo-nombre">
+				<label for="nombre" class="label">Nombre</label>
+				<div class="grupo-input">
+					<input type="text" class="input" name="nombre" id="nombre">
+					<i class="validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="input-error">El nombre sólo puede contener letras, su longitud debe ser entre 3 y 15 caracteres.</p>
+			</div>
+			<div class="grupo" id="grupo-correo">
+				<label for="correo" class="label">Correo Electrónico</label>
+				<div class="grupo-input">
+					<input type="email" class="input" name="correo" id="correo">
+					<i class="validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+			<div class="grupo" id="grupo-contraseña1">
+				<label for="contraseña1" class="label">Contraseña</label>
+				<div class="grupo-input">
+					<input type="password" class="input" name="contraseña1" id="contraseña1">
+					<i class="validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="input-error">La contraseña debe contener:<span>· Una letra mayúsculas y minúsculas.</span><span>· Un numero.</span><span>· Un caracter especial.</span><span>· Longitud entre 6 y 15 caracteres.</span></p>
+			</div>
+			<div class="grupo" id="grupo-contraseña2">
+				<label for="contraseña2" class="label">Repetir Contraseña</label>
+				<div class="grupo-input">
+					<input type="password" class="input" name="contraseña2" id="contraseña2">
+					<i class="validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+			<div class="grupo" id="grupo-sexo">
+				<label for="sexo" class="label">Sexo</label>
+				<div class="grupo-input">
+					<select name="sexo" id="sexo" class="input">
+						<option value="" hidden>Selecciona un valor</option>
+						<option value="hombre">Hombre</option>
+						<option value="mujer">Mujer</option>
+						<option value="otros">Prefiero no decirlo</option>
+					</select>
+					<i class="validacion-estado fas fa-times-circle select"></i>
+				</div>
+				<p class="input-error">Debes selecionar un sexo.</p>
+			</div>
+			<div class="grupo" id="grupo-ciudad">
+				<label for="ciudad" class="label">Ciudad</label>
+				<div class="grupo-input">
+					<select name="ciudad" id="ciudad" class="input">
+						<option value="" hidden>Selecciona un valor</option>
+						<option value="Almería">Almería</option>
+						<option value="Cádiz">Cádiz</option>
+						<option value="Córdoba">Córdoba</option>
+						<option value="Granada">Granada</option>
+						<option value="Huelva">Huelva</option>
+						<option value="Jaén">Jaén</option>
+						<option value="Málaga">Málaga</option>
+						<option value="Sevilla">Sevilla</option>
+					</select>
+					<i class="validacion-estado fas fa-times-circle select"></i>
+				</div>
+				<p class="input-error">Debes selecionar una ciudad.</p>
+			</div>
+			<div class="grupo" id="grupo-pais">
+				<label for="pais" class="label">Pais de residencia</label>
+				<div class="grupo-input">
+					<select name="pais" id="pais" class="input">
+						<option value="" hidden>Selecciona un valor</option>
+						<option value="Alemania">Alemania</option>
+						<option value="Austria">Austria</option>
+						<option value="Bélgica">Bélgica</option>
+						<option value="Bulgaria">Bulgaria</option>
+						<option value="Croacia">Croacia</option>
+						<option value="Chipre">Chipre</option>
+						<option value="Dinamarca">Dinamarca</option>
+						<option value="España">España</option>
+						<option value="Eslovenia">Eslovenia</option>
+						<option value="Eslovaquia">Eslovaquia</option>
+						<option value="Estonia">Estonia</option>
+						<option value="Francia">Francia</option>
+						<option value="Finlandia">Finlandia</option>
+						<option value="Grecia">Grecia</option>
+						<option value="Hungría">Hungría</option>
+						<option value="Irlanda">Irlanda</option>
+						<option value="Italia">Italia</option>
+						<option value="Letonia">Letonia</option>
+						<option value="Lituania">Lituania</option>
+						<option value="Luxemburgo">Luxemburgo</option>
+						<option value="Malta">Malta</option>
+						<option value="Suecia">Suecia</option>
+						<option value="Países Bajos">Países Bajos</option>
+						<option value="Polonia">Polonia</option>
+						<option value="Portugal">Portugal</option>
+						<option value="Rumanía">Rumanía</option>
+						<option value="República Checa">República Checa</option>
+					</select>
+					<i class="validacion-estado fas fa-times-circle select"></i>
+				</div>
+				<p class="input-error">Debes selecionar un País.</p>
+			</div>
+			<div class="grupo" id="grupo-fecha">
+				<label for="fecha" class="label">Fecha de nacimiento</label>
+				<div class="grupo-input">
+					<input type="date" class="input" name="fecha" id="fecha">
+					<i class="validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="input-error">Fecha no valida.<span>· Debes ser mayor de edad.</span>· No puedes tener más de 65 años.<span></span></p>
+			</div>
+			<div class="mensaje" id="mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> Error: Por favor rellena el formulario correctamente. </p>
+			</div>
+			<div class="grupo grupo-btn-enviar">
+				<input type="submit" value="Enviar" class="btn">
+				<a href="." class="btn">Limpiar datos</a>
+				<p class="mensaje-exito" id="mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+			<input type="hidden" name="_next" value="https://127.0.0.1\index.html">
+			<input type="hidden" name="_cc" value=" javiierfernandezz03@gmail.com ">
+			<input type="hidden" name="_captcha" value="false">
+			<input type="hidden" name="_template" value="box">
+		</form>
+		<h3>Web realizada por <span>Javier Fernández</span></h3>
+	</main>
+	<script src="./script.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+</body>
+</html>
